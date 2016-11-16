@@ -4,6 +4,7 @@
     "description": "Format Markdown text with Pandoc.",
     "version": "0.0.1",
     "publisher": "monofon",
+    "repository": "https://github.com/monofon/pandoc-format",
     "engines": {
         "vscode": "^1.7.0"
     },
