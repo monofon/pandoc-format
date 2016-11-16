@@ -24,7 +24,7 @@
                     "type": [
                         "string"
                     ],
-                    "default": "/usr/local/bin/pandoc --standalone --atx-headers --wrap=none --columns=999 -f markdown-auto_identifiers -t markdown-simple_tables-multiline_tables-grid_tables-auto_identifiers",
+                    "default": "pandoc --standalone --atx-headers --wrap=none --columns=999 -f markdown-auto_identifiers -t markdown-simple_tables-multiline_tables-grid_tables-auto_identifiers",
                     "description": "Specifies the pandoc invocation with options."
                 }
             }
