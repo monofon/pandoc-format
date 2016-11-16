@@ -1,0 +1,44 @@
+{
+    "name": "pandoc-format",
+    "displayName": "Pandoc Format",
+    "description": "Format Markdown text with Pandoc.",
+    "version": "0.0.1",
+    "publisher": "monofon",
+    "engines": {
+        "vscode": "^1.7.0"
+    },
+    "categories": [
+        "Formatters"
+    ],
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Pandoc command line",
+            "properties": {
+                "pandocFormat.command": {
+                    "type": [
+                        "string"
+                    ],
+                    "default": "/usr/local/bin/pandoc --standalone --atx-headers --wrap=none --columns=999 -f markdown-auto_identifiers -t markdown-simple_tables-multiline_tables-grid_tables-auto_identifiers",
+                    "description": "Specifies the pandoc invocation with options."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
