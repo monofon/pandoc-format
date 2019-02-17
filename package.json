@@ -2,11 +2,11 @@
     "name": "pandoc-format",
     "displayName": "Pandoc Format",
     "description": "Format Markdown text with Pandoc.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "monofon",
     "repository": "https://github.com/monofon/pandoc-format",
     "engines": {
-        "vscode": "^1.7.0"
+        "vscode": "^1.23.0"
     },
     "categories": [
         "Formatters"
@@ -20,7 +20,7 @@
             "type": "object",
             "title": "Pandoc command line",
             "properties": {
-                "pandocFormat.command": {
+                "pandoc-format.command": {
                     "type": [
                         "string"
                     ],
@@ -36,10 +36,10 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.10.3",
+        "tslint": "^5.12.1",
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.29"
     }
 }
